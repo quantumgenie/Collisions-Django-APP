@@ -1,0 +1,25 @@
+{%extends "./base.html"%}
+{%load bootstrap4%}
+
+{%block content%}
+<h2>Current Weather Conditions</h2>
+<table>
+    <tr>
+        <th>Number&nbsp;&nbsp;</th>
+        <th>Description</th>
+    </tr>
+    {%for weather_condition in weather_conditions%}
+    <tr>
+        <td>{{weather_condition.weather_cond_no}}</td>
+        <td>{{weather_condition.weather_cond}}</td>
+    </tr>
+    {%endfor%}
+</table>
+<br />
+<h2>Add New Weather Condition</h2>
+<form action="/add_weather_condition/" method="post" class="form">
+    {%csrf_token%}
+    {%bootstrap_form form%}
+    <input type="submit" value="Submit">
+</form>
+{%endblock%}

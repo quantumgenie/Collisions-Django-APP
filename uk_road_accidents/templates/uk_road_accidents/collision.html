@@ -1,0 +1,71 @@
+{%extends "./base.html"%}
+{% load bootstrap4%}
+
+{%block content%}
+<h1>{{ collision }}</h1>
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Collision Ref:</td>
+        <td>{{ collision.collision_ref}}</td>
+    </tr>
+    <tr>
+        <td>UK Grid Ref X:</td>
+        <td>{{ collision.uk_grid_ref_x}}</td>
+    </tr>
+    <tr>
+        <td>UK Grid Ref Y:</td>
+        <td>{{ collision.uk_grid_ref_y}}</td>
+    </tr>
+    <tr>
+        <td>Collision Severity:</td>
+        <td>{{ collision.collision_severity}}</td>
+    </tr>
+    <tr>
+        <td>No of Vehicles:</td>
+        <td>{{ collision.no_of_vehicles}}</td>
+    </tr>
+    <tr>
+        <td>No of Casualties:</td>
+        <td>{{ collision.no_of_casualties}}</td>
+    </tr>
+    <tr>
+        <td>Date:</td>
+        <td>{{ collision.date}}</td>
+    </tr>
+    <tr>
+        <td>Day of Week:</td>
+        <td>{{ collision.day_of_week}}</td>
+    </tr>
+    <tr>
+        <td>Road Class:</td>
+        <td>{{ collision.road_class}}</td>
+    </tr>
+    <tr>
+        <td>Road Type:</td>
+        <td>{{ collision.road_type}}</td>
+    </tr>
+    <tr>
+        <td>Speed Limit:</td>
+        <td>{{ collision.speed_limit}}</td>
+    </tr>
+    <tr>
+        <td>Light Condition:</td>
+        <td>{{ collision.light_condition}}</td>
+    </tr>
+    <tr>
+        <td>Weather Condition:</td>
+        <td>{{ collision.weather_condition}}</td>
+    </tr>
+    <tr>
+        <td>Road Surface Condition:</td>
+        <td>{{ collision.road_surface_condition}}</td>
+    </tr>
+
+</table>
+<a href="/update/{{collision.pk}}">UPDATE RECORD</a><br />
+<a href="/delete/{{collision.pk}}">DELETE RECORD</a>
+{%endblock%}

@@ -1,0 +1,28 @@
+{%include "./header.html"%}
+{%include "./title.html"%}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" id="collision_list">
+            {%block collisionList%}
+            <h1>Collisions List</h1>
+            <table id="collision_table">
+                <tr>
+                    <th>Collision Reference</th>
+                </tr>
+                {%for collision in master_collisions%}
+                <tr>
+                    <td><a href="/collision/{{collision.pk}}">{{collision}}</a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+        {%endblock%}
+        <div class="col-sm-8" class="content">
+            {%block content%}No content rendered{%endblock%}
+        </div>
+        {%include "./footer.html"%}
+
+    </div>
+</div>

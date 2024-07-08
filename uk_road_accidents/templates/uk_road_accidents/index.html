@@ -1,0 +1,18 @@
+{%extends "./base.html"%}
+
+{%block content%}
+<h2> Report Collision</h2>
+<a href="/add_collision/">Report New Collision</a>
+
+<h2> Weather Conditions</h2>
+<a href="/add_weather_condition/">Add New Weather Condition</a>
+<hr>
+<h2>Collision Reports by Severity</h2>
+<a href="/list/1">Fatal</a> || <a href="/list/2">Serious</a> || <a href="/list/3">Slight</a>
+
+<h2>Collision Reports by Date</h2>
+{%for date in collision_dates%}
+<a href="/date/{{date|date:'Y-m-d' }}">{{date|date:"Y-m-d" }}</a></br>
+{%endfor%}
+<br />
+{%endblock%}

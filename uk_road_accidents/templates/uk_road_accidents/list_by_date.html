@@ -1,0 +1,16 @@
+{%extends "./base.html"%}
+
+{%block content%}
+<h1>Collisions Filtered by Date: {{date}}</h1>
+<table>
+    <tr>
+        <th>Collision Reference</th>
+    </tr>
+    {%for collision in collisions%}
+    <tr>
+        <td><a href="/collision/{{collision.pk}}">{{collision}}</a>
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}

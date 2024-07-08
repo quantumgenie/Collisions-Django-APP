@@ -1,0 +1,64 @@
+body {
+    font-family: Helvetica;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#app_title {
+    display: inline;
+    vertical-align: middle;
+}
+
+#logo {
+    height: 50px;
+    width: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: middle;
+
+}
+
+#header {
+    vertical-align: middle;
+    width: 100%;
+    background-color: #d5e1f7;
+}
+
+#navigation {
+    width: 100%;
+    background-color: #E59200;
+    padding: 20px;
+}
+
+#footer {
+    width: 100%;
+    padding-left: 10px;
+    float: left;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.nav_link {
+    color: white;
+    padding-right: 20px;
+}
+
+.content {
+    padding-left: 10px;
+    float: left;
+}
+
+#collision_list {
+    padding-left: 10px;
+    padding-right: 20px;
+    float: left;
+    border-right: 2px dashed rgb(9, 59, 124);
+}
+
+.navbar {
+    padding: 0px;
+}

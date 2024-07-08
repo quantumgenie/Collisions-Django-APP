@@ -1,0 +1,30 @@
+[
+    {
+        "model": "uk_road_accidents.CollisionSeverity",
+        "pk": 1,
+        "fields": {
+            "col_sev_no": "1",
+            "col_sev_type": "Fatal"
+        }
+    },
+    {
+        "model": "uk_road_accidents.Collision",
+        "pk": 1,
+        "fields": {
+            "collision_ref": "123456789",
+            "uk_grid_ref_x": "583834",
+            "uk_grid_ref_y": "112833",
+            "collision_severity": "1",
+            "no_of_vehicles": "2",
+            "no_of_casualties": "3",
+            "date": "2023-01-01",
+            "day_of_week": "1",
+            "road_class": "1",
+            "road_type": "1",
+            "speed_limit": "30",
+            "light_condition": "1",
+            "weather_condition": "1",
+            "road_surface_condition": "1"
+        }
+    }
+]

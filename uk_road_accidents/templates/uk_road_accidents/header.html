@@ -1,0 +1,32 @@
+{% load bootstrap4%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, collision, collision, accident, accidents, road accident, road collision">
+    <meta name="author" content="C. Vlasie">
+    {%bootstrap_css%}
+    {%bootstrap_javascript jquery='full'%}
+    <link rel="stylesheet" type="text/css" href="../static/css/uk_road_accidents.css">
+    <script>
+        function changePage() {
+            console.log('Changing Page');
+            let h1_elements = document.querySelectorAll('h1');
+            let list_panel = document.getElementById('collision_list');
+            console.log(list_panel.innerHTML);
+            //list_panel.innerHTML = "<h2> Ooops, I did it again</h2>"
+            let nav_links = document.getElementsByClassName('nav_link');
+            for (var i = 0; i < nav_links.length; i++) {
+                nav_links[i].style.color = 'black';
+            }
+            for (h in h1_elements) {
+                h1_elements[h].innerHTML = "Iaca a disparut textul h1";
+            }
+        }
+    </script>
+    <title>Road Collision Browser</title>
+</head>
+
+<body>
